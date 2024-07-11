@@ -96,6 +96,8 @@ nav .fa{
 }
 
 
+
+
 @media(max-width: 700px){
     .navLinks ul li{
         display: block;
@@ -113,7 +115,13 @@ nav .fa{
         background-color: white;
         font-weight: bold;
         overflow-x: hidden;
+        transform: translateX(0%);
     }
+
+    .navLinks.show{
+        transform: translateX(-100%);
+    }
+
     nav .fa{
         display: block;
         margin: 10px;
@@ -123,8 +131,13 @@ nav .fa{
     .navLinks ul{
         padding: 30px;
     }
+
 }
 
-body {
-    overflow-x: hidden;
+
+.navImg{
+    position: absolute;
+    bottom: 0;
+    zoom: 60%;
+
 }
