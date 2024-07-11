@@ -27,8 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function apriMenu(){
     document.getElementById("navLinks").style.right = "0";
+    document.body.style.overflowX = "hidden";
 }
 function chiudiMenu(){
     document.getElementById("navLinks").style.right = "-200px";
+    document.body.style.overflowX = "auto";
 }
 
