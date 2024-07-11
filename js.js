@@ -23,3 +23,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('cookieConsent').classList.add('show');
     }
 });
+
+
+function apriMenu(){
+    document.getElementById("navLinks").style.right = "0";
+}
+function chiudiMenu(){
+    document.getElementById("navLinks").style.right = "-200px";
+}
+
