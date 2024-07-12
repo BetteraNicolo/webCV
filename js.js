@@ -1,8 +1,14 @@
+document.getElementById("navLinks").classList.add("hidden");
 function apriMenu(){
     document.getElementById("navLinks").classList.add("show");
+    document.getElementById("navLinks").classList.remove("hidden");
 }
 function chiudiMenu(){
     document.getElementById("navLinks").classList.remove("show");
+    setTimeout(function(){
+        document.getElementById("navLinks").classList.add("hidden");
+    }, 500);
+    
 }
 
 

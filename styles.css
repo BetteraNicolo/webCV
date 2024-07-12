@@ -1,20 +1,4 @@
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-#page {
-    animation: fadeIn 1.5s ease forwards;
-}
-
-
+/* cookie settings */
 #cookieConsent {
     display: none;
     justify-content: space-between;
@@ -48,6 +32,29 @@
     background-color: #ef4444;
 }
 
+/* cookie settings */
+
+
+
+/* animazione comparsa */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#page {
+    animation: fadeIn 1.5s ease forwards;
+}
+/* animazione comparsa */
+
+
+/* stili navbar desktop*/
 .navHeader{
     display: flex;
     padding: 2% 6%;
@@ -95,9 +102,17 @@ nav .fa{
     display: none;
 }
 
+.navImg{
+    position: absolute;
+    bottom: 0;
+    zoom: 60%;
+
+}
+/* stili navbar desktop*/
 
 
 
+/* stili navbar mobile*/
 @media(max-width: 700px){
     .navLinks ul li{
         display: block;
@@ -105,7 +120,7 @@ nav .fa{
 
     .navLinks {
         position: absolute;
-        height: 100vh;
+        height: full;
         width: 200px;
         top: 0;
         right: -200px;
@@ -122,6 +137,10 @@ nav .fa{
         transform: translateX(-100%);
     }
 
+    .navLinks.hidden{
+        display: none;
+    }
+
     nav .fa{
         display: block;
         margin: 10px;
@@ -132,12 +151,9 @@ nav .fa{
         padding: 30px;
     }
 
+
+
 }
 
 
-.navImg{
-    position: absolute;
-    bottom: 0;
-    zoom: 60%;
 
-}
