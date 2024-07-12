@@ -1,4 +1,14 @@
-document.getElementById("navLinks").classList.add("hidden");
+function toggleNavLinks() {
+    if (window.innerWidth < 700) {
+        document.getElementById("navLinks").classList.add("hidden");
+    } else {
+        document.getElementById("navLinks").classList.remove("hidden");
+    }
+}
+toggleNavLinks();
+window.addEventListener("resize", toggleNavLinks);
+
+
 function apriMenu(){
     document.getElementById("navLinks").classList.add("show");
     document.getElementById("navLinks").classList.remove("hidden");
