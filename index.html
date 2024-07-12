@@ -28,7 +28,7 @@
                 <div class="navLinks bg-base-300" id="navLinks">
                     <i class="fa fa-times" onclick="chiudiMenu()"></i>
                     <ul>
-                        <li class="navImg"><img src="ita.png" onclick="traduci('ita')" style="cursor: pointer;"></li>
+                        <li class="navImg"><img src="ita.png" onclick="traduci('ita')" style="cursor: pointer; position: absolute;"></li>
                         
                         <li class="navImg"><img src="eng.png" onclick="traduci('eng')" style="cursor: pointer;"></li>
                         
@@ -97,18 +97,12 @@
 
     <div style=" width: 75%; margin: 0 auto;" class="divider divider-neutral"></div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+ 
     <div id="cookieConsent" class="fixed bottom-0 w-full bg-gray-700 text-white py-2 px-4 text-sm z-10">
         Questo sito utilizza i cookie al solo scopo di mantenere la lingua selezionata, se rifiuti potresti dover tradurre nuovamente il sito
         <button class="ml-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded" onclick="accettaCookie()">Accetta</button>
         <button class="ml-2 bg-red-500 hover:bg-red-300 text-white px-2 py-1 rounded" onclick="rifiutaCookie()">Rifiuta</button>
     </div>
-
-
-
-
-
 
 
     <script src="js.js"></script>

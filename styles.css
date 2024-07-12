@@ -24,9 +24,6 @@
     background-color: #1e40af;
 }
 
-#cookieConsent button.reject {
-    background-color: red;
-}
 
 #cookieConsent button.reject:hover {
     background-color: #ef4444;
