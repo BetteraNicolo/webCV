@@ -10,8 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <script src="js.js"></script>
+    <link rel="shortcut icon" href="icona.png">
     
 </head>
 
@@ -23,19 +22,27 @@
             <div class="flex flex-col items-start mb-4 md:mb-0">
                     <h2 class="text-2xl font-bold" style="font-family: helvetica, sans-serif; font-size: 25px;">Bettera Nicolò </h2>
                     <div class="divider divider-neutral w-full" style="height: 0px; padding: 0px; margin: 0px;"></div>
-                    <p style="letter-spacing: 2px" class="text-sm">PERITO INFORMATICO</p>
+                    <p id="perito1" style="letter-spacing: 2px" class="text-sm">PERITO INFORMATICO</p>
             </div>
-
 
                 <div class="navLinks bg-base-300" id="navLinks">
                     <i class="fa fa-times" onclick="chiudiMenu()"></i>
                     <ul>
+                        <li class="navImg" onclick="traduci('ita')"><img src="ita.png"></li>
+                        
+                        <li class="navImg" onclick="traduci('eng')"><img src="eng.png"></li>
+                        
                         <li><a href="index.html">     HOME      </a>    </li>
                         <li><a href="portfolio.html"> PORTFOLIO </a>    </li>
-                        <li><a href="contatti.html">  CONTATTI  </a>    </li>
+                        <a href="contatti.html"><li id="contatti">  CONTATTI </li></a>
+                        <div class="navLinks bg-base-300" id="navImg">
                     </ul>
+            </div>
+
                 </div>
                 <i class="fa fa-bars" onclick="apriMenu()"></i>
+
+
 
         </nav>
         
@@ -50,6 +57,6 @@
     </div>
 
 
-
+    <script src="js.js"></script>
 </body>
 </html>
