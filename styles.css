@@ -12,23 +12,17 @@
 }
 
 #cookieConsent button {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 4px 8px;
-    cursor: pointer;
-    border-radius: 4px;    
-    text-align: left;
+    zoom: 80%;
+    font-weight: bold;
 }
 
 .bottoni{ /* Nuovo */
     display: flex;
-    gap: 8px; /* Spazio tra i bottoni */
+    gap: 25px; /* Spazio tra i bottoni */
+    position: relative;
+    left: 100;
 }
 
-#cookieConsent button:hover {
-    background-color: #1e40af;
-}
 
 /* cookie settings */
 

@@ -56,7 +56,8 @@ function traduci(lang) {
                                                             "Sono ora pronto ad intraprendere il percorso universitario presso la facoltà di Ingegneria Informatica " +
                                                             "dell'Università di Brescia per completare la mia formazione.";
         document.getElementById("pCookie").textContent =    "Questo sito utilizza i cookie al solo scopo di mantenere la lingua selezionata. Se rifiuti potresti dover tradurre nuovamente il sito";
-        
+        document.getElementById("accetta").textContent =    "Accetta";
+        document.getElementById("rifiuta").textContent =    "Rifiuta";
     }       
 
 
