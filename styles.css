@@ -19,8 +19,6 @@
 .bottoni{ /* Nuovo */
     display: flex;
     gap: 25px; /* Spazio tra i bottoni */
-    position: relative;
-    left: 100;
 }
 
 
