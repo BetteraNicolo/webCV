@@ -23,7 +23,7 @@ function chiudiMenu(){
 
 
 
-function traduci(lang) {
+function traduciIndex(lang) {
 
     if (lang === 'eng') {
         document.getElementById("perito1").textContent  =   "COMPUTER TECHNICIAN";
@@ -55,6 +55,50 @@ function traduci(lang) {
         document.getElementById("pCookie").textContent  =   "Questo sito utilizza i cookie al solo scopo di mantenere la lingua selezionata. Se rifiuti potresti dover tradurre nuovamente il sito";
         document.getElementById("accetta").textContent  =   "Accetta";
         document.getElementById("rifiuta").textContent  =   "Rifiuta";
+    }       
+
+
+
+    // salva la lingua selezionata nel cookie "lingua"
+    document.cookie = "lingua=" + lang + "; path=/; max-age=" + 60*60*24*365;       // 1 anno di durata
+}
+
+
+
+function traduciPortfolio(lang) {
+
+    if (lang === 'eng') {
+        document.getElementById("perito1").textContent  =   "COMPUTER TECHNICIAN";
+        document.getElementById("contatti").textContent =   "CONTACTS";
+
+        
+        
+    }
+    else{
+        document.getElementById("perito1").textContent  =   "PERITO INFORMATICO";
+        document.getElementById("contatti").textContent =   "CONTATTI";
+        
+    }       
+
+
+
+    // salva la lingua selezionata nel cookie "lingua"
+    document.cookie = "lingua=" + lang + "; path=/; max-age=" + 60*60*24*365;       // 1 anno di durata
+}
+
+function traduciContatti(lang) {
+
+    if (lang === 'eng') {
+        document.getElementById("perito1").textContent  =   "COMPUTER TECHNICIAN";
+        document.getElementById("contatti").textContent =   "CONTACTS";
+
+        
+        
+    }
+    else{
+        document.getElementById("perito1").textContent  =   "PERITO INFORMATICO";
+        document.getElementById("contatti").textContent =   "CONTATTI";
+        
     }       
 
 
@@ -103,7 +147,15 @@ document.addEventListener('DOMContentLoaded', function() {
     // ripristina la lingua salvata
     var linguaSalvata = getLinguaSalvata();
     if (linguaSalvata) {
-        traduci(linguaSalvata);
+        var pathname = window.location.pathname;
+
+        if (pathname.includes('index.html') || pathname === '/' || pathname === '') { //check varianti index.html
+            traduciIndex(linguaSalvata);
+        } else if (pathname.includes('portfolio.html')) {
+            traduciPortfolio(linguaSalvata);
+        } else if (pathname.includes('contatti.html')) {
+            traduciContatti(linguaSalvata);
+        }
     }
 });
 
