@@ -10,7 +10,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <link rel="shortcut icon" href="icona.png">
     
 </head>
 
@@ -34,7 +34,7 @@
                         
                         <li><a href="index.html">     HOME      </a>    </li>
                         <li><a href="portfolio.html"> PORTFOLIO </a>    </li>
-                        <li id="contatti"><a href="contatti.html">  CONTATTI  </a>    </li>
+                        <a href="contatti.html"><li id="contatti">  CONTATTI </li></a>
                         <div class="navLinks bg-base-300" id="navImg">
                     </ul>
             </div>
@@ -99,9 +99,11 @@
 
  
     <div id="cookieConsent" class="fixed bottom-0 w-full bg-gray-700 text-white py-2 px-4 text-sm z-10">
-        Questo sito utilizza i cookie al solo scopo di mantenere la lingua selezionata, se rifiuti potresti dover tradurre nuovamente il sito
-        <button class="ml-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded" onclick="accettaCookie()">Accetta</button>
-        <button class="ml-2 bg-red-500 hover:bg-red-300 text-white px-2 py-1 rounded" onclick="rifiutaCookie()">Rifiuta</button>
+        <p id="pCookie">Questo sito utilizza i cookie al solo scopo di mantenere la lingua selezionata, se rifiuti potresti dover tradurre nuovamente il sito</p>
+        <div class="bottoni">
+            <button class="ml-2 bg-blue-500 hover:bg-blue-600 text-white px-2 py-1 rounded" onclick="accettaCookie()"><p id="accetta">Accetta</p></button>
+            <button class="ml-2 bg-red-500 hover:bg-red-300 text-white px-2 py-1 rounded" onclick="rifiutaCookie()"><p id="rifiuta">Rifiuta</p></button>
+        </div>
     </div>
 
 

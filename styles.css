@@ -1,10 +1,10 @@
 /* cookie settings */
 #cookieConsent {
     display: none;
-    justify-content: space-between;
     align-items: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 8px;
+    justify-content: space-between;
 }
 
 #cookieConsent.show {
@@ -17,16 +17,17 @@
     border: none;
     padding: 4px 8px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 4px;    
+    text-align: left;
+}
+
+.bottoni{ /* Nuovo */
+    display: flex;
+    gap: 8px; /* Spazio tra i bottoni */
 }
 
 #cookieConsent button:hover {
     background-color: #1e40af;
-}
-
-
-#cookieConsent button.reject:hover {
-    background-color: #ef4444;
 }
 
 /* cookie settings */
@@ -148,9 +149,7 @@ nav .fa{
         padding: 30px;
     }
 
-
-
 }
-
+/* stili navbar mobile*/
 
 
