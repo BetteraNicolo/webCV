@@ -161,3 +161,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
 toggleNavLinks();                                   //controlla la dimensione dello schermo
 window.addEventListener("resize", toggleNavLinks);  //controlla ad ogni ridimensionamento 
+
+
+
+
+/* funzione in ascolto sullo scroll, attiva l'animazione dell'header in comparsa/scomparsa */
+window.addEventListener('scroll', function() {
+    var header = document.getElementById('header');
+    var scrollPosition = window.scrollY;
+
+    if (scrollPosition > 100) {
+        document.getElementById('header').classList.remove('showHeader');
+        document.getElementById('header').classList.add('hideHeader');  
+    } 
+    else {
+        document.getElementById('header').classList.add('showHeader');
+        document.getElementById('header').classList.remove('hideHeader');
+    }
+});
