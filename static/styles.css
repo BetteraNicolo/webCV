@@ -1,0 +1,186 @@
+/* cookie settings */
+#cookieConsent {
+    display: none;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    justify-content: space-between;
+}
+
+#cookieConsent.show {
+    display: flex;
+}
+
+#cookieConsent button {
+    zoom: 80%;
+    font-weight: bold;
+}
+
+.bottoni{
+    display: flex;
+    gap: 25px;
+}
+
+
+/* cookie settings */
+
+
+
+/* animazione comparsa */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#intro {
+    animation: fadeIn 1.5s ease forwards;
+    z-index: 5;
+}
+/* animazione comparsa */
+
+
+
+/* stili navbar desktop*/
+.navHeader{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s ease, height 0.3s ease;
+    height: 12vh;
+    z-index: 10;
+}
+
+.showHeader {
+    animation: fadeIn 0.5s ease forwards;
+    visibility: visible;
+    opacity: 100%;
+    z-index: 10;
+}
+
+.hideHeader {
+    animation: fadeOut 0.5s ease forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.headerTop{
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+
+.navLinks{
+    flex: 1;
+    text-align: right;
+    font-weight: bold;
+
+}
+
+.navLinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navLinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.navLinks ul li:hover::after{
+    width: 100%;
+}
+
+nav .fa{
+    display: none;
+}
+
+.navImg{
+    cursor: pointer;
+    position: relative; 
+    left: -50px;
+    top: 15px;
+    transform: translate(10%, 15%);
+    zoom: 60%;
+}
+
+/* stili navbar desktop*/
+
+
+#contacts{
+    min-width: 75vh;
+    margin: 0 auto;
+}
+
+
+/* stili navbar mobile*/
+@media(max-width: 700px){
+    .navLinks ul li{
+        display: block;
+    }
+
+    .navLinks {
+        position: absolute;
+        height: full;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 10;
+        transition: 1s;
+        background-color: white;
+        font-weight: bold;
+        overflow-x: hidden;
+        transform: translateX(0%);
+    }
+
+    .navLinks.show{
+        transform: translateX(-100%);
+    }
+
+    .navLinks.hidden{
+        display: none;
+    }
+
+    nav .fa{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .navLinks ul{
+        padding: 30px;
+    }
+
+    .navImg{
+        cursor: pointer;
+        position: relative; 
+        left: -20px;
+        top: 0px;
+        transform: translate(10%, 15%);
+        
+    }
+
+    /* stili navbar mobile*/
+
+    #contacts{
+        min-width: 30vh;
+        margin: 0 auto;
+    }
+
+}

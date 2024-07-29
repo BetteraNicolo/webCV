@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web CV</title>
+    <link rel="shortcut icon" href="img/icona.png">
+    
+    <!-- Librerie stili e JavaScript-->
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!--                            -->
+    
+</head>
+
+<body> 
+    
+    <!-- header della pagina web -->
+    <section class="headerTop bg-base-300" id="header">
+        <nav class="navHeader">
+            <div class="flex flex-col items-start mb-4 md:mb-0">
+                    <h2 class="text-2xl font-bold" style="font-family: helvetica, sans-serif; font-size: 25px;">Bettera Nicolò </h2>
+                    <div class="divider divider-neutral w-full" style="height: 0px; padding: 0px; margin: 0px;"></div>
+                    <p id="perito1" style="letter-spacing: 2px" class="text-sm">PERITO INFORMATICO</p>
+            </div>
+
+                <div class="navLinks bg-base-300" id="navLinks">
+                    <i class="fa fa-times" onclick="chiudiMenu()"></i>
+                    <ul>
+                        <li class="navImg" onclick="traduciIndex('ita')"><img src="img/ita.png"></li>
+                        
+                        <li class="navImg" onclick="traduciIndex('eng')"><img src="img/eng.png"></li>
+                        
+                        <li><a href="index.html">     HOME      </a>    </li>
+                        <li><a href="pdf/BetteraNicolo-CV.pdf" target="_blank"> CURRICULUM </a>    </li>
+                        <a href="contatti.html"><li id="contatti">  CONTATTI </li></a>
+                        <div class="navLinks bg-base-300" id="navImg">
+                    </ul>
+            </div>
+
+                </div>
+                <i class="fa fa-bars" onclick="apriMenu()"></i>
+        </nav>
+    </section>
+    <br>
+    <!-- Contenuto principale della pagina -->
+    <section id="intro" class="flex-grow flex flex-col md:flex-row items-center justify-center md:gap-5">
+
+        <!-- foto & contatti -->
+        <div id="img" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col items-center md:order-1">
+            <div style="z-index: 1" class="avatar">
+                <div class="w-24 rounded-full">
+                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                </div>
+            </div>
+            <br>
+            <p style="font-family: helvetica, sans-serif; font-size: 25px; font-weight: bold;">BETTERA</p> 
+            <p style="font-family: helvetica, sans-serif; font-size: 25px; font-weight: bold;">NICOLÒ</p>
+            <div class="divider divider-neutral w-full"></div>
+            <p id="perito2" style="letter-spacing: 3px">PERITO INFORMATICO</p>
+            <br>
+            <footer class="w-full bg-base-100 text-base-content p-5 flex justify-center" >
+                <nav class="flex space-x-12">
+                    <a href="mailto:betteranicolo@gmail.com">
+                        <i class="fas fa-envelope fa-2x"></i>
+                    </a>
+                    <a href="https://wa.me/+393343341088" target="_blank">
+                        <i class="fab fa-whatsapp fa-2x"></i>
+                    </a>
+                    <a href="https://instagram.com/nicolo.bettera" target="_blank">
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </a>
+                </nav>
+            </footer>
+        </div>
+
+        <!-- descrizione -->
+        <div id="info" class="w-full max-w-md p-6 text-base-content rounded-lg shadow-md flex flex-col items-center md:order-2">
+            <p id="ciao" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 35px; font-weight: bold;">CIAO!</p>
+            <br>
+            <p id="chi" align="center">Chi Sono?</p>
+            <br>
+            <p id="desc" style="text-align: center;">
+                Mi chiamo Nicolò Bettera, sono un giovane studente di Brescia.
+                <br>
+                Recentemente ho concluso gli studi presso l'Istituto Tecnico Bonsignori, specializzazione in Informatica.
+                <br>
+                Sono ora pronto ad intraprendere il percorso universitario presso la facoltà di Ingegneria Informatica dell'Università di Brescia per completare la mia formazione.
+            </p>
+            <br>
+        </div>
+    </section>
+
+    <br>
+    <div style=" width: 75%; margin: 0 auto;" class="divider divider-neutral"></div>
+    <div id="competenzeScuola" class="flex-grow flex flex-col md:flex-row items-center justify-center mt-4 space-x-4">
+        <div id="competenze" class="w-full max-w-sm p-6 text-base-content rounded-lg shadow-md md:order-2 md:ml-4">
+            <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">Diploma di Perito Tecnico Informatico</p>
+            <br>
+            <p align="center">IIS Bonsignori | 2019 - 2024</p>
+            <br>
+            <p id="DText" style="text-align: center;">
+                Durante il percorso, ho acquisito competenze nella programmazione con PHP per lo sviluppo di applicazioni web dinamiche, oltre a Java e C++ per fondamenti di programmazione. Ho utilizzato HTML e CSS per la creazione di interfacce web e ho approfondito l'uso di SQL per la gestione dei database, partecipando attivamente in vari progetti e stage.
+            </p>
+            <br>
+        </div>
+    </div>
+
+    <br>
+    <div style="width: 35%; margin: 0 auto;" class="divider divider-neutral"></div>
+    <br>
+    <br>
+    <h1 id="cert" align="center" style="font-family: arial black, sans-serif; font-size: 35px; font-weight: bold;"> Certificati Cisco </h1><br>
+
+    <section id="competenzeCisco" class="flex-grow flex flex-col md:flex-row justify-center md:gap-4">
+
+        <!-- IT Essentials -->
+        <a href="https://www.credly.com/badges/5c662b58-1654-4242-9f38-2b4cd2211d2a/public_url" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
+            <div id="competenze">
+                <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">IT Essentials: PC Hardware & Software</p>
+                <br>
+                <p align="center">Cisco Networking Academy | 2023 - 2024</p>
+                <br>
+                <p id="itEssText" style="text-align: center;">
+                    Questo corso fornisce una panoramica completa dei fondamenti dell'hardware e del software dei computer, inclusa l'installazione, la configurazione e la risoluzione dei problemi di PC, periferiche e dispositivi mobili. Copre anche i concetti di base di rete e sicurezza informatica.
+                </p>
+                <br>
+            </div>
+        </a>
+
+        <!-- Cybersec -->
+        <a href="https://www.credly.com/badges/1ffa84c8-2faf-4642-8225-fc7d66aad36f/public_url" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
+            <div id="competenze">
+                <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">CyberSecurity Essentials</p>
+                <br>
+                <p align="center">Cisco Networking Academy | 2023 - 2024</p>
+                <br>
+                <p id="CSecText" style="text-align: center;">
+                    Il corso introduce i concetti fondamentali della sicurezza informatica, inclusi i principi di sicurezza delle informazioni, le minacce e le vulnerabilità comuni, le tecniche di attacco e difesa e le migliori pratiche per la protezione dei dati e dei sistemi.
+                </p>
+                <br>
+            </div>
+        </a>
+
+        <!-- JS -->
+        <a href="https://edube.org/study/jse1" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
+            <div id="competenze">
+                <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">JavaScript Essentials 1 (JSE)</p>
+                <br>
+                <p align="center">Cisco Networking Academy | 2023 - 2024</p>
+                <br>
+                <p id="JSText" style="text-align: center;">
+                    Questo corso introduce i concetti fondamentali di programmazione utilizzando JavaScript. Copre le basi della sintassi del linguaggio, le strutture di controllo, le funzioni, gli oggetti e l'interazione con il DOM (Document Object Model) per la manipolazione dei contenuti web.
+                </p>
+                <br>
+            </div>
+        </a>
+
+        <!-- CCNA -->
+        <a href="https://www.credly.com/badges/59649577-c334-4c5c-908f-d54e7b042443/public_url" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
+            <div id="competenze" >
+                <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">CCNAv7: Introduction to Networks</p>
+                <br>
+                <p align="center">Cisco Networking Academy | 2023 - 2024</p>
+                <br>
+                <p id="CCNAText" style="text-align: center;">
+                    Questo è il primo modulo del programma CCNA (Cisco Certified Network Associate) che introduce i concetti di base delle reti. Copre argomenti come l'architettura delle reti, i modelli di comunicazione, gli indirizzi IP, i protocolli e i servizi fondamentali per la comunicazione su rete.
+                </p>
+                <br>
+            </div>
+        </a>
+
+    </section>
+
+    <br><br><br><br><br><br><br>
+
+    <section class="bg-base-300">
+        <div class="container mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+
+            <div>
+                <div class="flex flex-col md:flex-row items-start gap-4 lg:items-center">
+                    <span class="shrink-0 rounded-lg bg-neutral p-4">
+                        <p class="text-xl">🇮🇹</p>
+                    </span>
+                    <div class="flex flex-col w-full">
+                        <h2 class="text-lg font-bold">Italiano</h2>
+                        <p class="mt-1 text-sm text-base-content/50">Madre</p>
+                        <div class="w-full mt-2 flex flex-col">
+                            <progress class="progress w-56" value="100" max="100"></progress>
+                            <span class="text-sm font-medium text-base-content/50">C2</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-start gap-4 lg:items-center">
+                    <span class="shrink-0 rounded-lg bg-neutral p-4">
+                        <p class="text-xl">🇬🇧</p>
+                    </span>
+                    <div class="flex flex-col w-full">
+                        <h2 class="text-lg font-bold">Inglese</h2>
+                        <p class="mt-1 text-sm text-base-content/50">Intermedio superiore</p>
+                        <div class="w-full mt-2 flex flex-col">
+                            <progress class="progress w-56" value="70" max="100"></progress>
+                            <span class="text-sm font-medium text-base-content/50">B2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- parte cookies -->
+    <div id="cookieConsent" class="fixed bottom-0 w-full bg-base-300 py-2 px-4 text-sm z-10">
+        <p id="pCookie">Questo sito utilizza i cookie al solo scopo di mantenere la lingua selezionata, se rifiuti potresti dover tradurre nuovamente il sito</p>
+        <div class="bottoni">
+            <button class="btn btn-success" onclick="accettaCookie()"><p id="accetta">Accetta</p></button>
+            <button class="btn btn-error" onclick="rifiutaCookie()"><p id="rifiuta">Rifiuta</p></button>
+        </div>
+    </div>
+
+    <script src="static/js.js"></script>
+</body>
+</html>
