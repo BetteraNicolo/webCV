@@ -49,20 +49,20 @@
     <!-- Contenuto principale della pagina -->
     <div id="intro" class="flex-grow flex flex-col md:flex-row items-center justify-center mt-4 space-x-4">
         
-    <form name="email" method="POST" action="/invia-email">
+    <form name="email" method="POST" action="https://formspree.io/f/mjkbyqgy">
         <div id="contacts" class="w-full max-w-lg p-6 text-base-content rounded-lg shadow-md md:order-2 md:ml-4">
             
             <!-- Campo Username -->
             <label class="input input-bordered flex items-center gap-2">
                 <i class="fas fa-user h-4 w-4 opacity-70"></i>
-                <input type="text" class="grow" placeholder="Username" />
+                <input type="text" class="grow" placeholder="Username" required/>
             </label>
             <br>
             
             <!-- Campo Email -->
             <label class="input input-bordered flex items-center gap-2">
                 <i class="fas fa-envelope h-4 w-4 opacity-70"></i>
-                <input type="text" class="grow" placeholder="Email" />
+                <input type="text" name="email" class="grow" placeholder="Email" required />
             </label>
             <br>
 
@@ -74,7 +74,7 @@
             <br>
 
             <!-- Campo Messaggio -->
-            <textarea placeholder="Messaggio" class="textarea textarea-bordered textarea-lg w-full"></textarea>
+            <textarea placeholder="Messaggio" name="message" class="textarea textarea-bordered textarea-lg w-full" required></textarea>
             <br>
                 
             <!-- Bottone di invio -->
