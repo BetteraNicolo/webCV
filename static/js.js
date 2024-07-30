@@ -44,7 +44,8 @@ function traduciIndex(lang) {
         document.getElementById("username").placeholder =   "Username";  
         document.getElementById("oggetto").placeholder  =   "Subject";
         document.getElementById("mex").placeholder      =   "Message";
-        document.getElementById("invia").textContent    =   "Send";  
+        document.getElementById("invia").textContent    =   "Send"; 
+        document.getElementById('cv-link').href         =   "pdf/BetteraNicolo-CVENG.pdf"; 
     }
     else{
         document.getElementById("perito1").textContent  =   "PERITO INFORMATICO";
@@ -66,7 +67,7 @@ function traduciIndex(lang) {
         document.getElementById("oggetto").placeholder  =   "Oggetto";
         document.getElementById("mex").placeholder      =   "Messaggio";
         document.getElementById("invia").textContent    =   "Invia";   
-           
+        document.getElementById('cv-link').href         =   "pdf/BetteraNicolo-CVITA.pdf";   
         
     }       
 
@@ -87,9 +88,8 @@ function traduciPortfolio(lang) {
         document.getElementById("JSText").textContent   =   "This course introduces the fundamental concepts of programming using JavaScript. It covers the basics of the language's syntax, control structures, functions, objects, and interaction with the DOM (Document Object Model) for web content manipulation.";
         document.getElementById("CCNAText").textContent =   "This is the first module of the CCNA (Cisco Certified Network Associate) program, introducing the basic concepts of networking. It covers topics such as network architecture, communication models, IP addressing, protocols, and essential network services."
         document.getElementById("cert").textContent     =   "Cisco certifications";
+        document.getElementById('cv-link').href         =   "pdf/BetteraNicolo-CVENG.pdf";
 
-        
-        
     }
     else{
         document.getElementById("perito1").textContent  =   "PERITO INFORMATICO";
@@ -98,6 +98,7 @@ function traduciPortfolio(lang) {
         document.getElementById("JSText").textContent   =   "Questo corso introduce i concetti fondamentali di programmazione utilizzando JavaScript. Copre le basi della sintassi del linguaggio, le strutture di controllo, le funzioni, gli oggetti e l'interazione con il DOM (Document Object Model) per la manipolazione dei contenuti web.";
         document.getElementById("CCNAText").textContent =   "Questo è il primo modulo del programma CCNA (Cisco Certified Network Associate) che introduce i concetti di base delle reti. Copre argomenti come l'architettura delle reti, i modelli di comunicazione, gli indirizzi IP, i protocolli e i servizi fondamentali per la comunicazione su rete.";
         document.getElementById("cert").textContent     =   "Certificazioni Cisco";
+        document.getElementById('cv-link').href         =   "pdf/BetteraNicolo-CVITA.pdf";
     }       
 
 

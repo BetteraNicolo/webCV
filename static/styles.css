@@ -38,7 +38,7 @@
     }
 }
 
-#intro {
+body {
     animation: fadeIn 1.5s ease forwards;
     z-index: 5;
 }
