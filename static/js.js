@@ -46,6 +46,11 @@ function traduciIndex(lang) {
         document.getElementById("mex").placeholder      =   "Message";
         document.getElementById("invia").textContent    =   "Send"; 
         document.getElementById('cv-link').href         =   "pdf/BetteraNicolo-CVENG.pdf"; 
+        document.getElementById('cSocial').textContent  =   "Or contact me via social media";
+        document.getElementById('lvlIta').textContent   =   "Native";
+        document.getElementById('lvlEng').textContent   =   "Upper Intermediate";
+        document.getElementById('italiano').textContent =   "Italian";
+        document.getElementById('inglese').textContent  =   "English";
     }
     else{
         document.getElementById("perito1").textContent  =   "PERITO INFORMATICO";
@@ -68,7 +73,11 @@ function traduciIndex(lang) {
         document.getElementById("mex").placeholder      =   "Messaggio";
         document.getElementById("invia").textContent    =   "Invia";   
         document.getElementById('cv-link').href         =   "pdf/BetteraNicolo-CVITA.pdf";   
-        
+        document.getElementById('cSocial').textContent  =   "Oppure contattami tramite i social";
+        document.getElementById('lvlIta').textContent   =   "Madre lingua";
+        document.getElementById('lvlEng').textContent   =   "Intermedio superiore";   
+        document.getElementById('italiano').textContent =   "Italiano";
+        document.getElementById('inglese').textContent  =   "Inglese";
     }       
 
 
