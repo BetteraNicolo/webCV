@@ -34,8 +34,8 @@
                         <li class="navImg" onclick="traduciIndex('eng')"><img src="img/eng.png"></li>
                         
                         <li><a href="index.html">     HOME      </a>    </li>
+                        <a href="portfolio.html"><li id="contatti">  PORTFOLIO </li></a>
                         <li><a href="pdf/BetteraNicolo-CV.pdf" target="_blank"> CURRICULUM </a>    </li>
-                        <a href="contatti.html"><li id="contatti">  CONTATTI </li></a>
                         <div class="navLinks bg-base-300" id="navImg">
                     </ul>
             </div>
@@ -44,18 +44,14 @@
                 <i class="fa fa-bars" onclick="apriMenu()"></i>
         </nav>
     </section>
+
     <br>
-    <!-- Contenuto principale della pagina -->
-    <section id="intro" class="flex-grow flex flex-col md:flex-row items-center justify-center md:gap-5">
+    <!-- Contenuto iniziale della pagina -->
+    <section id="intro" class="flex-grow flex flex-col md:flex-row items-center md:space-x-20 justify-center md:gap-5">
 
         <!-- foto & contatti -->
         <div id="img" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col items-center md:order-1">
-            <div style="z-index: 1" class="avatar">
-                <div class="w-24 rounded-full">
-                    <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                </div>
-            </div>
-            <br>
+
             <p style="font-family: helvetica, sans-serif; font-size: 25px; font-weight: bold;">BETTERA</p> 
             <p style="font-family: helvetica, sans-serif; font-size: 25px; font-weight: bold;">NICOLÒ</p>
             <div class="divider divider-neutral w-full"></div>
@@ -85,7 +81,7 @@
             <p id="desc" style="text-align: center;">
                 Mi chiamo Nicolò Bettera, sono un giovane studente di Brescia.
                 <br>
-                Recentemente ho concluso gli studi presso l'Istituto Tecnico Bonsignori, specializzazione in Informatica.
+                Recentemente ho concluso gli studi presso l'Istituto Tecnico Bonsignori, specializzandomi in Informatica.
                 <br>
                 Sono ora pronto ad intraprendere il percorso universitario presso la facoltà di Ingegneria Informatica dell'Università di Brescia per completare la mia formazione.
             </p>
@@ -93,93 +89,25 @@
         </div>
     </section>
 
-    <br>
-    <div style=" width: 75%; margin: 0 auto;" class="divider divider-neutral"></div>
-    <div id="competenzeScuola" class="flex-grow flex flex-col md:flex-row items-center justify-center mt-4 space-x-4">
-        <div id="competenze" class="w-full max-w-sm p-6 text-base-content rounded-lg shadow-md md:order-2 md:ml-4">
-            <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">Diploma di Perito Tecnico Informatico</p>
-            <br>
-            <p align="center">IIS Bonsignori | 2019 - 2024</p>
-            <br>
+    <div style="width: 75%; margin: 0 auto; margin-top: 15px;" class="divider divider-neutral"></div>
+
+    <!-- Info sul diploma e Lingue -->
+    <h1 align="center" id="genF" style="margin-top: 20px; font-family: arial black, sans-serif; font-size: 35px; font-weight: bold;"> Formazione generale</h1>
+
+    <div class="flex flex-col md:flex-row items-center justify-center mt-4 space-y-4 md:space-y-0 md:space-x-40 bg-base-200">
+        <!-- Info sul diploma -->
+        <div id="competenze" class="w-full max-w-sm p-6 text-base-content rounded-lg bg-base-300">
+            <p id="DTitolo" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">Diploma di Perito Tecnico Informatico</p>
+            <p align="center" style="margin-bottom: 10px;">IIS Bonsignori | 2019 - 2024</p>
+            
             <p id="DText" style="text-align: center;">
                 Durante il percorso, ho acquisito competenze nella programmazione con PHP per lo sviluppo di applicazioni web dinamiche, oltre a Java e C++ per fondamenti di programmazione. Ho utilizzato HTML e CSS per la creazione di interfacce web e ho approfondito l'uso di SQL per la gestione dei database, partecipando attivamente in vari progetti e stage.
             </p>
-            <br>
         </div>
-    </div>
 
-    <br>
-    <div style="width: 35%; margin: 0 auto;" class="divider divider-neutral"></div>
-    <br>
-    <br>
-    <h1 id="cert" align="center" style="font-family: arial black, sans-serif; font-size: 35px; font-weight: bold;"> Certificati Cisco </h1><br>
-
-    <section id="competenzeCisco" class="flex-grow flex flex-col md:flex-row justify-center md:gap-4">
-
-        <!-- IT Essentials -->
-        <a href="https://www.credly.com/badges/5c662b58-1654-4242-9f38-2b4cd2211d2a/public_url" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
-            <div id="competenze">
-                <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">IT Essentials: PC Hardware & Software</p>
-                <br>
-                <p align="center">Cisco Networking Academy | 2023 - 2024</p>
-                <br>
-                <p id="itEssText" style="text-align: center;">
-                    Questo corso fornisce una panoramica completa dei fondamenti dell'hardware e del software dei computer, inclusa l'installazione, la configurazione e la risoluzione dei problemi di PC, periferiche e dispositivi mobili. Copre anche i concetti di base di rete e sicurezza informatica.
-                </p>
-                <br>
-            </div>
-        </a>
-
-        <!-- Cybersec -->
-        <a href="https://www.credly.com/badges/1ffa84c8-2faf-4642-8225-fc7d66aad36f/public_url" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
-            <div id="competenze">
-                <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">CyberSecurity Essentials</p>
-                <br>
-                <p align="center">Cisco Networking Academy | 2023 - 2024</p>
-                <br>
-                <p id="CSecText" style="text-align: center;">
-                    Il corso introduce i concetti fondamentali della sicurezza informatica, inclusi i principi di sicurezza delle informazioni, le minacce e le vulnerabilità comuni, le tecniche di attacco e difesa e le migliori pratiche per la protezione dei dati e dei sistemi.
-                </p>
-                <br>
-            </div>
-        </a>
-
-        <!-- JS -->
-        <a href="https://edube.org/study/jse1" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
-            <div id="competenze">
-                <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">JavaScript Essentials 1 (JSE)</p>
-                <br>
-                <p align="center">Cisco Networking Academy | 2023 - 2024</p>
-                <br>
-                <p id="JSText" style="text-align: center;">
-                    Questo corso introduce i concetti fondamentali di programmazione utilizzando JavaScript. Copre le basi della sintassi del linguaggio, le strutture di controllo, le funzioni, gli oggetti e l'interazione con il DOM (Document Object Model) per la manipolazione dei contenuti web.
-                </p>
-                <br>
-            </div>
-        </a>
-
-        <!-- CCNA -->
-        <a href="https://www.credly.com/badges/59649577-c334-4c5c-908f-d54e7b042443/public_url" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
-            <div id="competenze" >
-                <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">CCNAv7: Introduction to Networks</p>
-                <br>
-                <p align="center">Cisco Networking Academy | 2023 - 2024</p>
-                <br>
-                <p id="CCNAText" style="text-align: center;">
-                    Questo è il primo modulo del programma CCNA (Cisco Certified Network Associate) che introduce i concetti di base delle reti. Copre argomenti come l'architettura delle reti, i modelli di comunicazione, gli indirizzi IP, i protocolli e i servizi fondamentali per la comunicazione su rete.
-                </p>
-                <br>
-            </div>
-        </a>
-
-    </section>
-
-    <br><br>
-
-    <section class="bg-base-300">
-        <div class="container mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-
-            <div>
+        <!-- Lingue -->
+        <section class="flex-grow w-full max-w-sm bg-base-300 p-6 rounded-lg shadow-md">
+            <div class="container mx-auto">
                 <div class="flex flex-col md:flex-row items-start gap-4 lg:items-center">
                     <span class="shrink-0 rounded-lg p-2 flex items-center justify-center" style="background-color: gray; width: 60px; height: 60px;">
                         <p class="text-2xl">🇮🇹</p>
@@ -194,7 +122,7 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row items-start gap-4 lg:items-center">
+                <div class="flex flex-col md:flex-row items-start gap-4 lg:items-center mt-4">
                     <span class="shrink-0 rounded-lg p-2 flex items-center justify-center" style="background-color: gray; width: 60px; height: 60px;">
                         <p class="text-2xl">🇬🇧</p>
                     </span>
@@ -208,15 +136,58 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <br>
+    </div> 
+    <div style="width: 75%; margin: 0 auto; margin-top: 15px;" class="divider divider-neutral"></div>
 
+
+
+    <br><br>
+
+
+    <!-- Form invio Email tramite formspree -->
+    <form name="email" method="POST" action="https://formspree.io/f/mjkbyqgy">
+        <div id="contacts" class="w-full max-w-lg p-6 text-base-content rounded-lg shadow-md md:order-2 md:ml-4">
+
+            <h1 id="sendE" align="center" style="font-family: arial black, sans-serif; font-size: 30px; font-weight: bold; margin-top: 10px; margin-bottom: 15px;"> Mandami un'email </h1>
+            
+            <!-- Campo Username -->
+            <label class="input input-bordered flex items-center gap-2">
+                <i class="fas fa-user h-4 w-4 opacity-70"></i>
+                <input id="username" type="text" class="grow" placeholder="Nome Utente" required/>
+            </label>
+            <br>
+            
+            <!-- Campo Email -->
+            <label class="input input-bordered flex items-center gap-2">
+                <i class="fas fa-envelope h-4 w-4 opacity-70"></i>
+                <input type="text" name="email" class="grow" placeholder="Email" required />
+            </label>
+            <br>
+
+            <!-- Campo Oggetto -->
+            <label class="input input-bordered flex items-center gap-2">
+                <i class="fas fa-tag h-4 w-4 opacity-70"></i>
+                <input id="oggetto" type="text" class="grow" placeholder="Oggetto" />
+            </label>
+            <br>
+
+            <!-- Campo Messaggio -->
+            <textarea id="mex" placeholder="Messaggio" name="message" class="textarea textarea-bordered textarea-lg w-full" required></textarea>
+
+                
+            <!-- Bottone di invio -->
+            <button id="invia" type="submit" class="btn btn-active w-full" style="margin-top: 15px;">Invia</button>
         </div>
-    </section>
+    </form>
+
 
 
     <br><br><br><br><br><br><br>
 
 
-    <!-- parte cookies -->
+    <!-- cookies -->
     <div id="cookieConsent" class="fixed bottom-0 w-full bg-base-300 py-2 px-4 text-sm z-10">
         <p id="pCookie">Questo sito utilizza i cookie al solo scopo di mantenere la lingua selezionata, se rifiuti potresti dover tradurre nuovamente il sito</p>
         <div class="bottoni">

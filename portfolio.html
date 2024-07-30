@@ -29,13 +29,13 @@
                 <div class="navLinks bg-base-300" id="navLinks">
                     <i class="fa fa-times" onclick="chiudiMenu()"></i>
                     <ul>
-                        <li class="navImg" onclick="traduciContatti('ita')"><img src="img/ita.png"></li>
+                        <li class="navImg" onclick="traduciPortfolio('ita')"><img src="img/ita.png"></li>
                         
-                        <li class="navImg" onclick="traduciContatti('eng')"><img src="img/eng.png"></li>
+                        <li class="navImg" onclick="traduciPortfolio('eng')"><img src="img/eng.png"></li>
                         
                         <li><a href="index.html">     HOME      </a>    </li>
+                        <a href="portfolio.html"><li id="contatti">  PORTFOLIO </li></a>
                         <li><a href="pdf/BetteraNicolo-CV.pdf" target="_blank"> CURRICULUM </a>    </li>
-                        <a href="contatti.html"><li id="contatti">  CONTATTI </li></a>
                         <div class="navLinks bg-base-300" id="navImg">
                     </ul>
             </div>
@@ -47,41 +47,70 @@
     </section>
 
     <!-- Contenuto principale della pagina -->
+    <h1 id="cert" align="center" style="font-family: arial black, sans-serif; font-size: 35px; font-weight: bold;"> Certificazioni Cisco </h1><br>
     <div id="intro" class="flex-grow flex flex-col md:flex-row items-center justify-center mt-4 space-x-4">
-        
-    <form name="email" method="POST" action="https://formspree.io/f/mjkbyqgy">
-        <div id="contacts" class="w-full max-w-lg p-6 text-base-content rounded-lg shadow-md md:order-2 md:ml-4">
-            
-            <!-- Campo Username -->
-            <label class="input input-bordered flex items-center gap-2">
-                <i class="fas fa-user h-4 w-4 opacity-70"></i>
-                <input type="text" class="grow" placeholder="Username" required/>
-            </label>
-            <br>
-            
-            <!-- Campo Email -->
-            <label class="input input-bordered flex items-center gap-2">
-                <i class="fas fa-envelope h-4 w-4 opacity-70"></i>
-                <input type="text" name="email" class="grow" placeholder="Email" required />
-            </label>
-            <br>
 
-            <!-- Campo Oggetto -->
-            <label class="input input-bordered flex items-center gap-2">
-                <i class="fas fa-tag h-4 w-4 opacity-70"></i>
-                <input type="text" class="grow" placeholder="Oggetto" />
-            </label>
-            <br>
+        <section id="competenzeCisco" class="flex-grow flex flex-col md:flex-row justify-center md:gap-4">
 
-            <!-- Campo Messaggio -->
-            <textarea placeholder="Messaggio" name="message" class="textarea textarea-bordered textarea-lg w-full" required></textarea>
-            <br>
-                
-            <!-- Bottone di invio -->
-            <button type="submit" class="btn btn-active w-full">Invia</button>
-        </div>
-    </form>
+            <!-- IT Essentials -->
+            <a href="https://www.credly.com/badges/5c662b58-1654-4242-9f38-2b4cd2211d2a/public_url" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
+                <div id="competenze">
+                    <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">IT Essentials: PC Hardware & Software</p>
+                    <br>
+                    <p align="center">Cisco Networking Academy | 2023 - 2024</p>
+                    <br>
+                    <p id="itEssText" style="text-align: center;">
+                        Questo corso fornisce una panoramica completa dei fondamenti dell'hardware e del software dei computer, inclusa l'installazione, la configurazione e la risoluzione dei problemi di PC, periferiche e dispositivi mobili. Copre anche i concetti di base di rete e sicurezza informatica.
+                    </p>
+                   
+                </div>
+            </a>
 
+            <!-- Cybersec -->
+            <a href="https://www.credly.com/badges/1ffa84c8-2faf-4642-8225-fc7d66aad36f/public_url" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
+                <div id="competenze">
+                    <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">CyberSecurity Essentials</p>
+                    <br>
+                    <p align="center">Cisco Networking Academy | 2023 - 2024</p>
+                    <br>
+                    <p id="CSecText" style="text-align: center;">
+                        Il corso introduce i concetti fondamentali della sicurezza informatica, inclusi i principi di sicurezza delle informazioni, le minacce e le vulnerabilità comuni, le tecniche di attacco e difesa e le migliori pratiche per la protezione dei dati e dei sistemi.
+                    </p>
+                    
+                </div>
+            </a>
+
+            <!-- JS -->
+            <a href="https://edube.org/study/jse1" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
+                <div id="competenze">
+                    <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">JavaScript Essentials 1 (JSE)</p>
+                    <br>
+                    <p align="center">Cisco Networking Academy | 2023 - 2024</p>
+                    <br>
+                    <p id="JSText" style="text-align: center;">
+                        Questo corso introduce i concetti fondamentali di programmazione utilizzando JavaScript. Copre le basi della sintassi del linguaggio, le strutture di controllo, le funzioni, gli oggetti e l'interazione con il DOM (Document Object Model) per la manipolazione dei contenuti web.
+                    </p>
+                    
+                </div>
+            </a>
+
+            <!-- CCNA -->
+            <a href="https://www.credly.com/badges/59649577-c334-4c5c-908f-d54e7b042443/public_url" target="_blank" class="w-full max-w-md p-6 bg-base-300 text-base-content rounded-lg shadow-md flex flex-col md:order-1 mb-4 md:mb-0">
+                <div id="competenze" >
+                    <p id="diploma" class="flex flex-col items-center" style="font-family: arial black, sans-serif; font-size: 15px; font-weight: bold;">CCNAv7: Introduction to Networks</p>
+                    <br>
+                    <p align="center">Cisco Networking Academy | 2023 - 2024</p>
+                    <br>
+                    <p id="CCNAText" style="text-align: center;">
+                        Questo è il primo modulo del programma CCNA (Cisco Certified Network Associate) che introduce i concetti di base delle reti. Copre argomenti come l'architettura delle reti, i modelli di comunicazione, gli indirizzi IP, i protocolli e i servizi fondamentali per la comunicazione su rete.
+                    </p>
+                    
+                </div>
+            </a>
+
+        </section>
+
+    <br><br>
 
 
     </div>

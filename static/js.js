@@ -28,7 +28,6 @@ function traduciIndex(lang) {
     if (lang === 'eng') {
         document.getElementById("perito1").textContent  =   "COMPUTER TECHNICIAN";
         document.getElementById("perito2").textContent  =   "COMPUTER TECHNICIAN";
-        document.getElementById("contatti").textContent =   "CONTACTS";
         document.getElementById("ciao").textContent     =   "HELLO!";
         document.getElementById("chi").textContent      =   "Who am I?";
         document.getElementById("desc").textContent     =   "My name is Nicolò Bettera, I am a young student from Brescia. " +
@@ -39,33 +38,36 @@ function traduciIndex(lang) {
         document.getElementById("accetta").textContent  =   "Accept";
         document.getElementById("rifiuta").textContent  =   "Reject";
         document.getElementById("DText").textContent    =   "During the course, I acquired skills in programming with PHP for developing dynamic web applications, as well as in Java and C++ for fundamental programming. I used HTML and CSS for creating web interfaces and deepened my knowledge of SQL for database management, actively participating in various projects and internships.";
-        document.getElementById("itEssText").textContent=   "This course provides a comprehensive overview of the fundamentals of computer hardware and software, including the installation, configuration, and troubleshooting of PCs, peripherals, and mobile devices. It also covers basic networking and cybersecurity concepts.";
-        document.getElementById("CSecText").textContent =   "The course introduces the fundamental concepts of cybersecurity, including information security principles, common threats and vulnerabilities, attack and defense techniques, and best practices for protecting data and systems.";
-        document.getElementById("JSText").textContent   =   "This course introduces the fundamental concepts of programming using JavaScript. It covers the basics of the language's syntax, control structures, functions, objects, and interaction with the DOM (Document Object Model) for web content manipulation.";
-        document.getElementById("CCNAText").textContent =   "This is the first module of the CCNA (Cisco Certified Network Associate) program, introducing the basic concepts of networking. It covers topics such as network architecture, communication models, IP addressing, protocols, and essential network services."
-        document.getElementById("cert").textContent     =   "Cisco certifications";
-        
-        
+        document.getElementById("DTitolo").textContent  =   "Technical Diploma in Computer Science";    
+        document.getElementById("genF").textContent     =   "General education";    
+        document.getElementById("sendE").textContent    =   "Send me an email";    
+        document.getElementById("username").placeholder =   "Username";  
+        document.getElementById("oggetto").placeholder  =   "Subject";
+        document.getElementById("mex").placeholder      =   "Message";
+        document.getElementById("invia").textContent    =   "Send";  
     }
     else{
         document.getElementById("perito1").textContent  =   "PERITO INFORMATICO";
         document.getElementById("perito2").textContent  =   "PERITO INFORMATICO";
-        document.getElementById("contatti").textContent =   "CONTATTI";
-        document.getElementById("contatti").textContent =   "CONTATTI";
         document.getElementById("ciao").textContent     =   "CIAO!";
         document.getElementById("chi").textContent      =   "Chi Sono?";
         document.getElementById("desc").textContent     =   "Mi chiamo Nicolò Bettera, sono un giovane studente di Brescia. " +
-                                                            "Recentemente ho concluso gli studi presso l'Istituto Tecnico Bonsignori, specializzazione in Informatica. " +
+                                                            "Recentemente ho concluso gli studi presso l'Istituto Tecnico Bonsignori, specializzandomi in Informatica. " +
                                                             "Sono ora pronto ad intraprendere il percorso universitario presso la facoltà di Ingegneria Informatica " +
                                                             "dell'Università di Brescia per completare la mia formazione.";
         document.getElementById("pCookie").textContent  =   "Questo sito utilizza i cookie al solo scopo di mantenere la lingua selezionata. Se rifiuti potresti dover tradurre nuovamente il sito";
         document.getElementById("accetta").textContent  =   "Accetta";
         document.getElementById("rifiuta").textContent  =   "Rifiuta";
         document.getElementById("DText").textContent    =   "Durante il percorso, ho acquisito competenze nella programmazione con PHP per lo sviluppo di applicazioni web dinamiche, oltre a Java e C++ per fondamenti di programmazione. Ho utilizzato HTML e CSS per la creazione di interfacce web e ho approfondito l'uso di SQL per la gestione dei database, partecipando attivamente in vari progetti e stage.";
-        document.getElementById("itEssText").textContent=   "Questo corso fornisce una panoramica completa dei fondamenti dell'hardware e del software dei computer, inclusa l'installazione, la configurazione e la risoluzione dei problemi di PC, periferiche e dispositivi mobili. Copre anche i concetti di base di rete e sicurezza informatica.";
-        document.getElementById("CSecText").textContent =   "Il corso introduce i concetti fondamentali della sicurezza informatica, inclusi i principi di sicurezza delle informazioni, le minacce e le vulnerabilità comuni, le tecniche di attacco e difesa e le migliori pratiche per la protezione dei dati e dei sistemi.";
-        document.getElementById("JSText").textContent   =   "Questo corso introduce i concetti fondamentali di programmazione utilizzando JavaScript. Copre le basi della sintassi del linguaggio, le strutture di controllo, le funzioni, gli oggetti e l'interazione con il DOM (Document Object Model) per la manipolazione dei contenuti web.";
-        document.getElementById("CCNAText").textContent =   "Questo è il primo modulo del programma CCNA (Cisco Certified Network Associate) che introduce i concetti di base delle reti. Copre argomenti come l'architettura delle reti, i modelli di comunicazione, gli indirizzi IP, i protocolli e i servizi fondamentali per la comunicazione su rete.";
+        document.getElementById("DTitolo").textContent  =   "Diploma di Perito Tecnico Informatico";     
+        document.getElementById("genF").textContent     =   "Formazione generale";    
+        document.getElementById("sendE").textContent    =   "Mandami un'email";   
+        document.getElementById("username").placeholder =   "Nome Utente";
+        document.getElementById("oggetto").placeholder  =   "Oggetto";
+        document.getElementById("mex").placeholder      =   "Messaggio";
+        document.getElementById("invia").textContent    =   "Invia";   
+           
+        
     }       
 
 
@@ -76,19 +78,26 @@ function traduciIndex(lang) {
 
 
 
-function traduciContatti(lang) {
+function traduciPortfolio(lang) {
 
     if (lang === 'eng') {
         document.getElementById("perito1").textContent  =   "COMPUTER TECHNICIAN";
-        document.getElementById("contatti").textContent =   "CONTACTS";
+        document.getElementById("itEssText").textContent=   "This course provides a comprehensive overview of the fundamentals of computer hardware and software, including the installation, configuration, and troubleshooting of PCs, peripherals, and mobile devices. It also covers basic networking and cybersecurity concepts.";
+        document.getElementById("CSecText").textContent =   "The course introduces the fundamental concepts of cybersecurity, including information security principles, common threats and vulnerabilities, attack and defense techniques, and best practices for protecting data and systems.";
+        document.getElementById("JSText").textContent   =   "This course introduces the fundamental concepts of programming using JavaScript. It covers the basics of the language's syntax, control structures, functions, objects, and interaction with the DOM (Document Object Model) for web content manipulation.";
+        document.getElementById("CCNAText").textContent =   "This is the first module of the CCNA (Cisco Certified Network Associate) program, introducing the basic concepts of networking. It covers topics such as network architecture, communication models, IP addressing, protocols, and essential network services."
+        document.getElementById("cert").textContent     =   "Cisco certifications";
 
         
         
     }
     else{
         document.getElementById("perito1").textContent  =   "PERITO INFORMATICO";
-        document.getElementById("contatti").textContent =   "CONTATTI";
-        
+        document.getElementById("itEssText").textContent=   "Questo corso fornisce una panoramica completa dei fondamenti dell'hardware e del software dei computer, inclusa l'installazione, la configurazione e la risoluzione dei problemi di PC, periferiche e dispositivi mobili. Copre anche i concetti di base di rete e sicurezza informatica.";
+        document.getElementById("CSecText").textContent =   "Il corso introduce i concetti fondamentali della sicurezza informatica, inclusi i principi di sicurezza delle informazioni, le minacce e le vulnerabilità comuni, le tecniche di attacco e difesa e le migliori pratiche per la protezione dei dati e dei sistemi.";
+        document.getElementById("JSText").textContent   =   "Questo corso introduce i concetti fondamentali di programmazione utilizzando JavaScript. Copre le basi della sintassi del linguaggio, le strutture di controllo, le funzioni, gli oggetti e l'interazione con il DOM (Document Object Model) per la manipolazione dei contenuti web.";
+        document.getElementById("CCNAText").textContent =   "Questo è il primo modulo del programma CCNA (Cisco Certified Network Associate) che introduce i concetti di base delle reti. Copre argomenti come l'architettura delle reti, i modelli di comunicazione, gli indirizzi IP, i protocolli e i servizi fondamentali per la comunicazione su rete.";
+        document.getElementById("cert").textContent     =   "Certificazioni Cisco";
     }       
 
 
@@ -141,8 +150,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (pathname.includes('index.html') || pathname === '/' || pathname === '') { //check varianti index.html
             traduciIndex(linguaSalvata);
-        } else if (pathname.includes('contatti.html')) {
-            traduciContatti(linguaSalvata);
+        } else if (pathname.includes('portfolio.html')) {
+            traduciPortfolio(linguaSalvata);
         }
     }
 });
