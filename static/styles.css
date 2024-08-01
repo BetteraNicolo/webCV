@@ -182,5 +182,8 @@ nav .fa{
         min-width: 30vh;
         margin: 0 auto;
     }
-
+    
+    #info {
+        margin-top: 20px ; 
+    }
 }
