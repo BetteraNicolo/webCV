@@ -111,15 +111,15 @@ function traduciPortfolio(lang) {
         document.getElementById("stgC").textContent     =   "Curricular internship";
         document.getElementById("posizione").textContent=   "Position: IT Technician";
         document.getElementById("periodo").innerHTML    =   "<strong>Duration:</strong> June 2023 - July 2023";
-        document.getElementById("descS").innerHTML      =   "<strong>Description:</strong> This project was undertaken as an extracurricular activity, with the goal of having fun and learning web programming. We created an application that allows the class to play together in two games, with the teacher acting as the administrator. Here’s what it offers:";
+        document.getElementById("descS").innerHTML      =   "<strong>Description:</strong> During the curricular internship, I independently managed daily activities and collaborated on group projects, following the directives of the supervisor. I applied and deepened my technical and operational knowledge. The main activities performed include:";
         document.getElementById("azienda").innerHTML    =   "<strong>Company:</strong> <u><a href='https://www.clickitsolutions.it' target='_blank'> Click it Solutions </a></u>  ";
-        document.getElementById("prjS").textContent     = "School Project";
-        document.getElementById("prjM").innerHTML       = 'Project: <u><a href="https://www.sitinosetosobellino.altervista.org/progettoMemory/" target="_blank">Memory</a></u>';
-        document.getElementById("descP").innerHTML      = "<strong>Description:</strong> This project was undertaken as an extracurricular activity, with the goal of having fun and learning web programming. We created an application that allows the class to play together in two games, with the teacher acting as the administrator. Here’s what it offers:";
-        document.getElementById("memory").innerHTML     = "<strong>Memory Mode:</strong> Students must match between 8 and 32 cards, depending on the device's space (for example, the school interactive whiteboard showed all 32 cards). Half of the cards show historical figures, while the other half contains the name and a brief description. This game helps to memorize historical figures while having fun.";
-        document.getElementById("indovina").innerHTML   = "<strong>Guess Who Mode:</strong> Users participate in the same session. The teacher can manage the characters, time, hints, and check scores. During the game, the name of the character is gradually revealed to help participants. At the end, results and scores are shown on the screen.";
-        document.getElementById("host").textContent     = "The project is now available online for everyone. The teacher can, with the provided credentials, update and modify the characters, allowing for future expansions and improvements to the game.";
-        document.getElementById("tecno").innerHTML      = "<strong>Technologies:</strong> JavaScript, SQL, HTML, CSS, PHP";
+        document.getElementById("prjS").textContent     =   "School Project";
+        document.getElementById("prjM").innerHTML       =   'Project: <u><a href="https://www.sitinosetosobellino.altervista.org/progettoMemory/" target="_blank">Memory</a></u>';
+        document.getElementById("descP").innerHTML      =   "<strong>Description:</strong> This project was undertaken as an extracurricular activity, with the goal of having fun and learning web programming. We created an application that allows the class to play together in two games, with the teacher acting as the administrator. Here’s what it offers:";
+        document.getElementById("memory").innerHTML     =   "<strong>Memory Mode:</strong> Students must match between 8 and 32 cards, depending on the device's space (for example, the school interactive whiteboard showed all 32 cards). Half of the cards show historical figures, while the other half contains the name and a brief description. This game helps to memorize historical figures while having fun.";
+        document.getElementById("indovina").innerHTML   =   "<strong>Guess Who Mode:</strong> Users participate in the same session. The teacher can manage the characters, time, hints, and check scores. During the game, the name of the character is gradually revealed to help participants. At the end, results and scores are shown on the screen.";
+        document.getElementById("host").textContent     =   "The project is now available online for everyone. The teacher can, with the provided credentials, update and modify the characters, allowing for future expansions and improvements to the game.";
+        document.getElementById("tecno").innerHTML      =   "<strong>Technologies:</strong> JavaScript, SQL, HTML, CSS, PHP (click <a href='https://github.com/BetteraNicolo/Memory' target='_blank'> <u>here</u> </a> to view the source code)";
 
         
         
@@ -153,7 +153,7 @@ function traduciPortfolio(lang) {
         document.getElementById("memory").innerHTML     =   "<strong>Modalità Memory:</strong> Gli studenti devono abbinare tra 8 e 32 figurine, a seconda dello spazio del dispositivo (ad esempio, la LIM scolastica mostrava tutte e 32 le figurine). Metà delle figurine mostrano personaggi storici, mentre l'altra metà contiene il nome e una breve descrizione. Questo gioco aiuta a memorizzare i personaggi storici divertendosi.";
         document.getElementById("indovina").innerHTML   =   "<strong>Modalità Indovina Chi:</strong> Gli utenti partecipano alla stessa sessione. L'insegnante può gestire i personaggi, il tempo, i suggerimenti e controllare i punteggi. Durante il gioco, il nome del personaggio viene svelato gradualmente per aiutare i partecipanti. Alla fine, i risultati e i punteggi vengono mostrati sullo schermo.";
         document.getElementById("host").textContent     =   "Il progetto è ora disponibile online per tutti. L'insegnante può, con le credenziali fornite, aggiornare e modificare i personaggi, permettendo così future espansioni e miglioramenti del gioco.";
-        document.getElementById("tecno").innerHTML      =   "<strong>Tecnologie:</strong> JavaScript, SQL, HTML, CSS, PHP";
+        document.getElementById("tecno").innerHTML      =   "<strong>Tecnologie:</strong> JavaScript, SQL, HTML, CSS, PHP (clicca <a href='https://github.com/BetteraNicolo/Memory' target='_blank'> <u>qui</u> </a> per visualizzare il codice sorgente)";
          
  
 
@@ -221,7 +221,7 @@ window.addEventListener("resize", toggleNavLinks);  //controlla ad ogni ridimens
 
 
 
-/* funzione in ascolto sullo scroll, attiva l'animazione dell'header in comparsa/scomparsa */
+// funzione in ascolto sullo scroll, attiva l'animazione dell'header in comparsa/scomparsa
 window.addEventListener('scroll', function() {
     var header = document.getElementById('header');
     var scrollPosition = window.scrollY;
